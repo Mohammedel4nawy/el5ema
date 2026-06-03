@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>كافيه الخيمة - المنيو</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+    background: #1a0a00;
+    color: #f5e6c8;
+    min-height: 100vh;
+  }
+
+  .hero {
+    background: #2d1200;
+    border-bottom: 2px solid #c8860a;
+    padding: 32px 20px 24px;
+    text-align: center;
+  }
+  .hero-icon { font-size: 48px; margin-bottom: 8px; }
+  .hero h1 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #f0c040;
+    letter-spacing: 2px;
+    margin-bottom: 4px;
+  }
+  .hero p {
+    color: #c8a060;
+    font-size: 14px;
+    letter-spacing: 4px;
+  }
+
+  .nav {
+    display: flex;
+    overflow-x: auto;
+    gap: 8px;
+    padding: 12px 16px;
+    background: #250f00;
+    border-bottom: 1px solid #5a3010;
+    scrollbar-width: none;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .nav::-webkit-scrollbar { display: none; }
+  .nav-btn {
+    white-space: nowrap;
+    padding: 7px 16px;
+    border-radius: 20px;
+    border: 1px solid #7a4a15;
+    background: transparent;
+    color: #c8a060;
+    font-size: 13px;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.2s;
+    text-decoration: none;
+  }
+  .nav-btn:hover, .nav-btn.active {
+    background: #c8860a;
+    border-color: #c8860a;
+    color: #1a0a00;
+    font-weight: 600;
+  }
+
+  .page { padding: 0 16px 40px; max-width: 680px; margin: 0 auto; }
+
+  .section { margin-top: 28px; }
+  .section-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #5a3010;
+  }
+  .section-title h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #f0c040;
+  }
+  .section-title span { font-size: 22px; }
+
+  .items-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2d1200;
+    border: 0.5px solid #5a3010;
+    border-radius: 10px;
+    padding: 12px 14px;
+  }
+  .item-name {
+    font-size: 15px;
+    color: #f5e6c8;
+    font-weight: 500;
+  }
+  .item-price {
+    font-size: 15px;
+    font-weight: 700;
+    color: #f0c040;
+    white-space: nowrap;
+  }
+  .item-price span {
+    font-size: 11px;
+    color: #c8a060;
+    font-weight: 400;
+    margin-right: 2px;
+  }
+
+  .footer {
+    text-align: center;
+    padding: 24px 16px;
+    color: #7a5030;
+    font-size: 12px;
+    border-top: 1px solid #3a1a00;
+  }
+
+  @media print {
+    .nav { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-icon">🪔</div>
+  <h1>كافيه الخيمة</h1>
+  <p>Q A I M A   C A F E</p>
+</div>
+
+<div class="nav">
+  <a class="nav-btn active" href="#icecream">آيس كريم</a>
+  <a class="nav-btn" href="#juice">عصائر فريش</a>
+  <a class="nav-btn" href="#soft">مشروبات غازية</a>
+  <a class="nav-btn" href="#shisha">حجر معسل</a>
+  <a class="nav-btn" href="#hot">مشروبات ساخنة</a>
+</div>
+
+<div class="page">
+
+  <div class="section" id="icecream">
+    <div class="section-title"><span>🍦</span><h2>آيس كريم</h2></div>
+    <div class="items-grid">
+      <div class="item"><div class="item-name">زبادي توت</div><div class="item-price"><span>جنيه</span>30</div></div>
+      <div class="item"><div class="item-name">بلح</div><div class="item-price"><span>جنيه</span>30</div></div>
+      <div class="item"><div class="item-name">شوكولاتة</div><div class="item-price"><span>جنيه</span>30</div></div>
+      <div class="item"><div class="item-name">فانيليا</div><div class="item-price"><span>جنيه</span>30</div></div>
+      <div class="item"><div class="item-name">فراولة</div><div class="item-price"><span>جنيه</span>30</div></div>
+      <div class="item"><div class="item-name">مانجا</div><div class="item-price"><span>جنيه</span>30</div></div>
+    </div>
+  </div>
+
+  <div class="section" id="juice">
+    <div class="section-title"><span>🥤</span><h2>عصائر فريش</h2></div>
+    <div class="items-grid">
+      <div class="item"><div class="item-name">جوافة</div><div class="item-price"><span>جنيه</span>30</div></div>
+      <div class="item"><div class="item-name">فراولة</div><div class="item-price"><span>جنيه</span>30</div></div>
+      <div class="item"><div class="item-name">موز</div><div class="item-price"><span>جنيه</span>30</div></div>
+      <div class="item"><div class="item-name">عناب</div><div class="item-price"><span>جنيه</span>20</div></div>
+      <div class="item"><div class="item-name">ليمون</div><div class="item-price"><span>جنيه</span>20</div></div>
+      <div class="item"><div class="item-name">ليمون نعناع</div><div class="item-price"><span>جنيه</span>25</div></div>
+      <div class="item"><div class="item-name">كوكتيل</div><div class="item-price"><span>جنيه</span>35</div></div>
+    </div>
+  </div>
+
+  <div class="section" id="soft">
+    <div class="section-title"><span>🫙</span><h2>مشروبات غازية</h2></div>
+    <div class="items-grid">
+      <div class="item"><div class="item-name">كولا</div><div class="item-price"><span>جنيه</span>20</div></div>
+      <div class="item"><div class="item-name">سبريت</div><div class="item-price"><span>جنيه</span>20</div></div>
+      <div class="item"><div class="item-name">فانتا</div><div class="item-price"><span>جنيه</span>20</div></div>
+      <div class="item"><div class="item-name">تويست</div><div class="item-price"><span>جنيه</span>25</div></div>
+      <div class="item"><div class="item-name">فيوري</div><div class="item-price"><span>جنيه</span>25</div></div>
+      <div class="item"><div class="item-name">شويبس</div><div class="item-price"><span>جنيه</span>25</div></div>
+      <div class="item"><div class="item-name">فولت</div><div class="item-price"><span>جنيه</span>15</div></div>
+      <div class="item"><div class="item-name">بيبسي</div><div class="item-price"><span>جنيه</span>25</div></div>
+      <div class="item"><div class="item-name">بريل</div><div class="item-price"><span>جنيه</span>30</div></div>
+      <div class="item"><div class="item-name">فيروز</div><div class="item-price"><span>جنيه</span>30</div></div>
+    </div>
+  </div>
+
+  <div class="section" id="shisha">
+    <div class="section-title"><span>💨</span><h2>حجر معسل</h2></div>
+    <div class="items-grid">
+      <div class="item"><div class="item-name">حجر معسل</div><div class="item-price"><span>جنيه</span>15</div></div>
+      <div class="item"><div class="item-name">إسكندراني</div><div class="item-price"><span>جنيه</span>35</div></div>
+      <div class="item"><div class="item-name">شيشة فواكه</div><div class="item-price"><span>جنيه</span>40</div></div>
+      <div class="item"><div class="item-name">شيشة فواكه فاخر</div><div class="item-price"><span>جنيه</span>50</div></div>
+    </div>
+  </div>
+
+  <div class="section" id="hot">
+    <div class="section-title"><span>☕</span><h2>مشروبات ساخنة</h2></div>
+    <div class="items-grid">
+      <div class="item"><div class="item-name">شاي</div><div class="item-price"><span>جنيه</span>10</div></div>
+      <div class="item"><div class="item-name">شاي فواكه</div><div class="item-price"><span>جنيه</span>15</div></div>
+      <div class="item"><div class="item-name">شاي حليب</div><div class="item-price"><span>جنيه</span>20</div></div>
+      <div class="item"><div class="item-name">شاي أخضر</div><div class="item-price"><span>جنيه</span>10</div></div>
+      <div class="item"><div class="item-name">عناب سخن</div><div class="item-price"><span>جنيه</span>10</div></div>
+      <div class="item"><div class="item-name">نعناع</div><div class="item-price"><span>جنيه</span>10</div></div>
+      <div class="item"><div class="item-name">ينسون</div><div class="item-price"><span>جنيه</span>10</div></div>
+      <div class="item"><div class="item-name">قهوة تركي</div><div class="item-price"><span>جنيه</span>20</div></div>
+      <div class="item"><div class="item-name">قهوة فرنساوي</div><div class="item-price"><span>جنيه</span>25</div></div>
+      <div class="item"><div class="item-name">قهوة بندق</div><div class="item-price"><span>جنيه</span>30</div></div>
+      <div class="item"><div class="item-name">قهوة محوج</div><div class="item-price"><span>جنيه</span>20</div></div>
+      <div class="item"><div class="item-name">قرفة</div><div class="item-price"><span>جنيه</span>15</div></div>
+      <div class="item"><div class="item-name">قرفة حليب</div><div class="item-price"><span>جنيه</span>20</div></div>
+      <div class="item"><div class="item-name">جنزبيل</div><div class="item-price"><span>جنيه</span>15</div></div>
+      <div class="item"><div class="item-name">ليمون سخن</div><div class="item-price"><span>جنيه</span>15</div></div>
+      <div class="item"><div class="item-name">مستشفي (ليمون - جنزبيل - ينسون)</div><div class="item-price"><span>جنيه</span>15</div></div>
+      <div class="item"><div class="item-name">شاي فواكه حليب</div><div class="item-price"><span>جنيه</span>25</div></div>
+      <div class="item"><div class="item-name">سحلب مكسرات</div><div class="item-price"><span>جنيه</span>25</div></div>
+      <div class="item"><div class="item-name">سحلب أوريو</div><div class="item-price"><span>جنيه</span>30</div></div>
+      <div class="item"><div class="item-name">سحلب فواكه</div><div class="item-price"><span>جنيه</span>40</div></div>
+      <div class="item"><div class="item-name">سحلب شرب</div><div class="item-price"><span>جنيه</span>20</div></div>
+      <div class="item"><div class="item-name">نسكافيه</div><div class="item-price"><span>جنيه</span>20</div></div>
+      <div class="item"><div class="item-name">نسكافيه بلاك</div><div class="item-price"><span>جنيه</span>15</div></div>
+      <div class="item"><div class="item-name">نسكافيه بلاك حليب</div><div class="item-price"><span>جنيه</span>25</div></div>
+      <div class="item"><div class="item-name">نسكافيه حليب</div><div class="item-price"><span>جنيه</span>25</div></div>
+      <div class="item"><div class="item-name">كابتشينو</div><div class="item-price"><span>جنيه</span>30</div></div>
+      <div class="item"><div class="item-name">هوت شوكولاتة</div><div class="item-price"><span>جنيه</span>30</div></div>
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">
+  <p>أهلاً وسهلاً بكم في كافيه الخيمة ☕</p>
+</div>
+
+</body>
+</html>
